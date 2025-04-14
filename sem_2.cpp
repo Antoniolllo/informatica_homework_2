@@ -98,9 +98,9 @@ int main() {
     shapes[4] = new Rhomb(4.0, 45.0);
 
     for (int i = 0; i < 5; ++i) {
-        std::cout << "Фигура " << i+1 << ":\n";
-        std::cout << "  "; shapes[i]->area(); std::cout << std::endl;
-        std::cout << "  "; shapes[i]->perimetr(); std::cout << std::endl;
+        std::cout << "Фигура " << i+1 << std::endl;
+        std::cout << shapes[i]->area()<< std::endl;
+        std::cout << shapes[i]->perimetr()<<std::endl;
         std::cout << std::endl;
     }
 
