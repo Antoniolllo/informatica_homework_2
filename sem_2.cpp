@@ -89,13 +89,13 @@ public:
 
 
 int main() {
-    Shape* shapes[] = {
-        new Circle(5.0),
-        new Square(4.0),
-        new Rectangle(3.0, 6.0),
-        new Ellipse(5.0, 3.0),
-        new Rhomb(4.0, 45.0)
-    };
+    Shape* shapes[5];  // Массив из 5 указателей
+
+    shapes[0] = new Circle(5.0);
+    shapes[1] = new Square(4.0);
+    shapes[2] = new Rectangle(3.0, 6.0);
+    shapes[3] = new Ellipse(5.0, 3.0);
+    shapes[4] = new Rhomb(4.0, 45.0);
 
     for (int i = 0; i < 5; ++i) {
         std::cout << "Фигура " << i+1 << ":\n";
